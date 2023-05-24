@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <section class="top">
+          <div class="topDate day">
+            <h1 class="dayMonthYear">Day</h1>
+            <input class="dayInput" type="number" placeholder="DD" />
+            <p class="dayErrorMessage errorMessage">hi lol</p>
+          </div>
+          <div class="topDate month">
+            <h1 class="dayMonthYear">Month</h1>
+            <input class="monthInput" type="number" placeholder="MM" />
+            <p class="monthErrorMessage errorMessage">hi lol</p>
+          </div>
+          <div class="topDate year">
+            <h1 class="dayMonthYear">Year</h1>
+            <input class="yearInput" type="number" placeholder="YYYY" />
+            <p class="yearErrorMessage errorMessage">hi lol</p>
+          </div>
+        </section>
+        <section class="center">
+          <hr />
+          <div class="purpleCircle">
+            <img src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
+          </div>
+        </section>
+        <section class="bottom">
+          <h1><span class="years">--</span> years</h1>
+          <h1><span class="months">--</span> months</h1>
+          <h1><span class="days">--</span> days</h1>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
+
+  --white: hsl(0, 0%, 100%);
+  --offWhite: hsl(0, 0%, 94%);
+  --lightGray: hsl(0, 0%, 86%);
+  --smokeyGrey: hsl(0, 1%, 44%);
+  --offBlack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3.2rem;
+  background-color: var(--offWhite);
+}
+
+.card {
+  padding: 4.8rem 2.4rem;
+  width: 34.3rem;
+  border-radius: 24px 24px 100px 24px;
+
+  background-color: var(--white);
+}
+
+/******* TOP  *********/
+
+.top {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.topDate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dayMonthYear {
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--smokeyGrey);
+}
+
+input {
+  padding-top: 1.2rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.2rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--lightGray);
+
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  color: var(--offBlack);
+}
+
+.topDate input:focus {
+  border: 1px solid var(--purple);
+  outline: none;
+}
+
+.topDate input::placeholder {
+  color: var(--smokeyGrey);
+}
+
+/* ERROR  */
+.errorMessage {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--lightRed);
+}
+
+.dayErrorMessage,
+.monthErrorMessage,
+.yearErrorMessage {
+  display: none;
+}
+
+.redBorder {
+  border: 1px solid var(--lightRed);
+}
+
+.redFont {
+  color: var(--lightRed);
+}
+
+/******* CENTER  *********/
+
+.center {
+  position: relative;
+}
+
+hr {
+  margin-top: 6.35rem;
+  border: 1px solid var(--lightGray);
+}
+
+.purpleCircle {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: var(--purple);
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s linear;
+}
+
+.purpleCircle:hover {
+  background-color: var(--offBlack);
+}
+
+.purpleCircle > img {
+  width: 3rem;
+}
+
+/******* BOTTOM  *********/
+
+.bottom {
+  margin-top: 6.35rem;
+}
+
+.bottom > h1 {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 5.6rem;
+  line-height: 110%;
+  letter-spacing: -2px;
+
+  color: var(--offBlack);
+}
+
+.bottom > h1 > span {
+  color: var(--purple);
+  transition: all 0.3s linear;
+}
